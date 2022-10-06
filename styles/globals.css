@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1D1D1D] text-[#F8F9FA] font-poppins tracking-wide;
+  }
+}
