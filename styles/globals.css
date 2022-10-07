@@ -6,4 +6,30 @@
   body {
     @apply bg-[#1D1D1D] text-[#F8F9FA] font-poppins tracking-wide;
   }
+
+  h1 {
+    @apply font-semibold text-4xl;
+  }
+
+  h2,
+  h3,
+  h4 {
+    @apply font-medium;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  li {
+    @apply cursor-pointer font-medium text-xl text-[#212529];
+  }
 }
