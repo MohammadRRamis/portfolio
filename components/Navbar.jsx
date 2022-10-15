@@ -11,9 +11,9 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed w-full z-[100]'>
-      <div className='flex justify-between items-center w-full h-full px-12 py-6 2xl:px-16'>
-        <Image src="/../public/assets/logo.png" alt="image" width="196" height="73" />
+    <div className='fixed w-full z-[100] '>
+      <div className='flex justify-between items-center w-full h-full px-12 2xl:px-16 py-6 '>
+        <Image src="/../public/assets/logo.png" alt="image" width="165" height="61" />
         <div>
           <ul className='hidden md:flex'>
             <Link href='/'>
