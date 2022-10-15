@@ -15,8 +15,8 @@ const Main = () => {
         More about me!
       </button>
     </div>
-      <div className='absolute 2xl:right-[200px] lg:right-[100px] bottom-0 z-[101] 2xl:w-[551px] 2xl w-[389px]'>
-        <Image src={Me} alt="image" layout="fill" objectFit="contain" />
+      <div className='absolute 2xl:right-[200px] lg:right-[100px] bottom-0 z-[101] 2xl:w-[551px] 2xl w-[389px] object-contain'>
+        <Image src={Me} alt="image" layout="fill"/>
       </div>
 
       <div className='flex justify-end w-full h-screen'><div className='absolute flex flex-row-reverse content-center justify-center items-center'>
