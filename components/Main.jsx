@@ -15,7 +15,7 @@ const Main = () => {
         More about me!
       </button>
     </div>
-      <div className='absolute 2xl:right-[200px] lg:right-[100px] bottom-0 z-[101] 2xl:w-[551px] 2xl w-[389px] object-contain'>
+      <div className='absolute 2xl:right-[200px] lg:right-[100px] bottom-0 z-[99] 2xl:w-[500px] w-[389px] object-contain'>
         <Image src={Me} alt="image" layout="fill"/>
       </div>
 
