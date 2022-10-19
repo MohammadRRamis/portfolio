@@ -14,37 +14,6 @@ const Work = () => {
       <div className='flex flex-col items-center'>
         <h1 className='uppercase text-[#6FC2FF]  py-20'>UX CASE STUDIES</h1>
         <div className='flex'>
-          <Link href='/misk'>
-            <div className='relative w-auto object-contain cursor-pointer group '>
-              <Image
-                className='transition-opacity duration-500 ease-in-out group-hover:opacity-20'
-                src={Misk}
-                alt='image'
-                layout='fill'
-              />
-              <div className='absolute top-0 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100'>
-                <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
-                  <h2>Misk Hub Program Enrollment</h2>
-                  <p>
-                    Enhancing the enrollment journey of all program tracks in
-                    the Misk Hub platform.
-                  </p>
-                  <div className='flex items-center'>
-                    <Image src={Duration} alt='image' layout='fill' />
-                    <h3>
-                      <span>Duration:</span> 3 Weeks
-                    </h3>
-                  </div>
-                  <div className='flex items-center'>
-                    <Image src={Role} alt='image' layout='fill' />
-                    <h3>
-                      <span>Role:</span> UX designer
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
           <a
             target='_blank'
             href='https://bootcamp.uxdesign.cc/case-study-improving-the-experience-of-sports-activities-in-abha-47bd3d0415d'
@@ -80,9 +49,7 @@ const Work = () => {
               </div>
             </div>
           </a>
-        </div>
 
-        <div className='flex'>
           <a
             target='_blank'
             href='https://bootcamp.uxdesign.cc/ux-case-study-designing-a-website-for-a-pet-store-7d14e68750cd'
@@ -118,6 +85,9 @@ const Work = () => {
               </div>
             </div>
           </a>
+        </div>
+
+        <div className='flex'>
           <a
             target='_blank'
             href='https://bootcamp.uxdesign.cc/ux-case-study-task-management-application-for-kids-c9525066ddc8'
@@ -153,6 +123,40 @@ const Work = () => {
               </div>
             </div>
           </a>
+
+          <div className='relative w-auto object-contain cursor-default group '>
+            <Image
+              className='transition-opacity duration-500 ease-in-out group-hover:opacity-20'
+              src={Misk}
+              alt='image'
+              layout='fill'
+            />
+            <div className='absolute top-0 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100'>
+              <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
+                <h2>Misk Hub Program Enrollment</h2>
+                <p>
+                  Enhancing the enrollment journey of all program tracks in the
+                  Misk Hub platform.
+                </p>
+                <div className='flex items-center'>
+                  <Image src={Duration} alt='image' layout='fill' />
+                  <h3>
+                    <span>Duration:</span> 3 Weeks
+                  </h3>
+                </div>
+                <div className='flex items-center'>
+                  <Image src={Role} alt='image' layout='fill' />
+                  <h3>
+                    <span>Role:</span> UX designer
+                  </h3>
+                </div>
+                <p className='text-[#6FC2FF]'>
+                  Can&#39;t be disclosed publicly due to a non-disclosure
+                  agreement
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
