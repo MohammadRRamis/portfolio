@@ -30,7 +30,13 @@ const Navbar = () => {
               </Scroll>
             </li>
             <li className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D]'>
-              <Link href='/'>CV</Link>
+              <a
+                target='_blank'
+                href='https://drive.google.com/file/d/1xPqqhQoCWR8yNGmVsa_J0sAUMqoK8d9_/view?usp=sharing'
+                rel='noopener noreferrer'
+              >
+                CV
+              </a>
             </li>
           </ul>
         </div>
