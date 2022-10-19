@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/future/image';
+import Mra from '../public/assets/mra.png';
+import Deadeye from '../public/assets/deadeye.png';
+
 
 const About = () => {
   const [about, setAbout] = useState(true);
@@ -60,7 +63,7 @@ const About = () => {
                 }
               >
                 <Image
-                  src='/../public/assets/mra.png'
+                  src={Mra}
                   alt='image'
                   width='220'
                   height='61'
@@ -124,7 +127,7 @@ const About = () => {
               >
                 <Image
                   className='select-none'
-                  src='/../public/assets/deadeye.png'
+                  src={Deadeye}
                   alt='image'
                   width='220'
                   height='61'

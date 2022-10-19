@@ -2,18 +2,18 @@ import Image from 'next/future/image';
 import React from 'react';
 import Link from 'next/link';
 import { Link as Scroll } from 'react-scroll';
+import Logo from '../public/assets/logo.png';
 
 const Navbar = () => {
   return (
     <div className='absolute w-full z-[100] '>
       <div className='flex justify-between items-center w-full h-full px-12 2xl:px-16 py-6 '>
         <Link href='/'>
-          <div className='cursor-pointer'>
+          <div className='w-[140px] cursor-pointer'>
             <Image
-              src='/../public/assets/logo.png'
+              src={Logo}
               alt='image'
-              width='165'
-              height='61'
+              layout='fill'
             />
           </div>
         </Link>

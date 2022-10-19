@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/future/image';
-import Link from 'next/link';
 import Misk from '../public/assets/misk.png';
 import Abha from '../public/assets/abha.png';
 import Pets from '../public/assets/pets.png';
