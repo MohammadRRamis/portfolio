@@ -65,8 +65,8 @@ const Work = () => {
                 <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
                   <h2>Joon Pet Supplies Store</h2>
                   <p>
-                    Designing a website that enhances the experience of the
-                    customers.
+                    Designing a website that enhances the experience of
+                    shopping for pet supplies.
                   </p>
                   <div className='flex items-center'>
                     <Image src={Duration} alt='image' layout='fill' />

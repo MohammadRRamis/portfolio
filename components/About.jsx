@@ -54,12 +54,12 @@ const About = () => {
               </li>
             </ul>
 
-            <div className='absolute top-0 left-0'>
+            <div className='absolute top-0 left-0 w-full'>
               <div
                 className={
                   about
-                    ? 'flex flex-row-reverse items-end w-[80vw] h-[750px] transition-all duration-500 ease-in opacity-100'
-                    : 'flex flex-row-reverse items-end w-[20vw] h-[750px] transition-all duration-500 ease-in opacity-20'
+                    ? 'flex flex-row-reverse items-end w-full h-[750px] transition-all duration-500 ease-in opacity-100'
+                    : 'flex flex-row-reverse items-end w-full h-[750px] transition-all duration-500 ease-in opacity-20'
                 }
               >
                 <Image
@@ -117,12 +117,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className='absolute top-0 left-0'>
+            <div className='absolute top-0 left-0 w-full'>
               <div
                 className={
                   about
-                    ? 'flex items-end justify-start w-[20vw] h-[750px] opacity-20'
-                    : 'flex items-end justify-start w-[80vw] h-[750px] opacity-100'
+                    ? 'flex items-end justify-start w-full h-[750px] opacity-20'
+                    : 'flex items-end justify-start w-full h-[750px] opacity-100'
                 }
               >
                 <Image
