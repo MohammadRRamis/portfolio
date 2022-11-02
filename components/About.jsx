@@ -3,7 +3,6 @@ import Image from 'next/future/image';
 import Mra from '../public/assets/mra.png';
 import Deadeye from '../public/assets/deadeye.png';
 
-
 const About = () => {
   const [about, setAbout] = useState(true);
 
@@ -13,7 +12,6 @@ const About = () => {
 
   return (
     <div id='about' className='bg-[#272727]'>
-      <h1 className='uppercase text-center text-[#6FC2FF]  py-20'>ABOUT ME</h1>
       <div className='w-full h-[750px] overflow-hidden block'>
         <ul className='w-full table table-fixed m-0 p-0'>
           <li
@@ -27,32 +25,64 @@ const About = () => {
             <h1
               className={
                 about
-                  ? 'transition-opacity duration-500 ease-in'
-                  : 'transition-opacity duration-500 ease-in opacity-60'
+                  ? 'transition-opacity duration-500 ease-in pb-10'
+                  : 'transition-opacity duration-500 ease-in pb-10 opacity-60'
               }
             >
               MRA
             </h1>
-
-            <ul
-              role='list'
-              className={
-                about
-                  ? 'marker:text-[#212529] list-disc p-11 space-y-20 animate-show'
-                  : 'hidden'
-              }
-            >
-              <li>
-                Front end web developer with interest in blockchain technologies
-              </li>
-              <li>Loves exploring new fields and knowing more about them</li>
-              <li>Utilizes all the tools available to maximize productivity</li>
-
-              <li>
-                Likes to expand his knowledge by reading articles related to UX
-                design
-              </li>
-            </ul>
+            <div className={'flex justify-center space-x-10'}>
+              <div className='space-y-10'>
+                <div
+                  className={
+                    about
+                      ? 'w-60 h-60 text-white text-center animate-show'
+                      : 'hidden'
+                  }
+                >
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                    Front end web developer with interest in blockchain
+                    technologies
+                  </div>
+                </div>
+                <div
+                  className={
+                    about
+                      ? 'w-60 h-60  text-white text-center animate-show'
+                      : 'hidden'
+                  }
+                >
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                    Loves exploring new fields and knowing more about them
+                  </div>
+                </div>
+              </div>
+              <div className='space-y-10'>
+                <div
+                  className={
+                    about
+                      ? 'w-60 h-60 text-white text-center animate-show'
+                      : 'hidden'
+                  }
+                >
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                    Utilizes all the tools available to maximize productivity
+                  </div>
+                </div>
+                <div
+                  className={
+                    about
+                      ? 'w-60 h-60  text-white text-center animate-show'
+                      : 'hidden'
+                  }
+                >
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                    Likes to expand his knowledge by reading articles related to
+                    UX design
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className='absolute top-0 left-0 w-full'>
               <div
@@ -62,12 +92,7 @@ const About = () => {
                     : 'flex flex-row-reverse items-end w-full h-[750px] transition-all duration-500 ease-in opacity-20'
                 }
               >
-                <Image
-                  src={Mra}
-                  alt='image'
-                  width='220'
-                  height='61'
-                />
+                <Image src={Mra} alt='image' width='220' height='61' />
               </div>
             </div>
           </li>
@@ -76,41 +101,49 @@ const About = () => {
             onClick={handleAbout}
             className={
               about
-                ? 'bg-gblack table-cell relative w-[20%] h-[750px] transition-all duration-500 ease-in p-11'
-                : 'bg-gblack table-cell relative w-[80%] h-[750px] transition-all duration-500 ease-in p-11'
+                ? 'bg-gblack font-medium text-xl table-cell relative w-[20%] h-[750px] transition-all duration-500 ease-in p-11'
+                : 'bg-gblack font-medium text-xl table-cell relative w-[80%] h-[750px] transition-all duration-500 ease-in p-11'
             }
           >
             <h1
               className={
                 about
-                  ? 'text-[#F8F9FA] text-right transition-opacity duration-500 ease-in opacity-60'
-                  : 'text-[#F8F9FA] text-right transition-opacity duration-500 ease-in'
+                  ? 'text-[#F8F9FA] text-right transition-opacity duration-500 ease-in pb-10 opacity-60'
+                  : 'text-[#F8F9FA] text-right transition-opacity duration-500 ease-in pb-10'
               }
             >
               DeadEye
             </h1>
-            <div className='pl-72 py-11 space-y-20'>
+            <div className='pl-60  space-y-20'>
               <div className={about ? 'hidden' : 'space-y-20 animate-show'}>
-                <ul
-                  role='list'
-                  className='marker:text-[#F8F9FA] list-disc  space-y-10 text-left'
-                >
-                  <li className='text-[#F8F9FA]'>Competitive esports player</li>
+                <div className='flex w-full justify-center space-x-5'>
+                  <div className='w-60 h-60 text-white text-center animate-show'>
+                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
+                      Competitive esports player
+                    </div>
+                  </div>
+                  <div className='w-60 h-60 text-white text-center animate-show'>
+                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
+                      Anime enthusiast
+                    </div>
+                  </div>
+                  <div className='w-60 h-60 text-white text-center animate-show'>
+                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
+                      Likes to build PCs
+                    </div>
+                  </div>
+                </div>
 
-                  <li className='text-[#F8F9FA]'>Anime enthusiast</li>
-
-                  <li className='text-[#F8F9FA]'>Likes to play the piano</li>
-                </ul>
-                <div className='space-y-10'>
+                <div className='flex w-full items-center justify-center space-x-10'>
                   <h3 className='text-[#6FC2FF]'>Learnings:</h3>
-                  <div className='flex justify-evenly'>
-                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-[#F8F9FA]'>
+                  <div className='flex space-x-5'>
+                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-white'>
                       Teamwork skills
                     </div>
-                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-[#F8F9FA]'>
+                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-white'>
                       Always strive to become the best
                     </div>
-                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-[#F8F9FA]'>
+                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-white'>
                       Never give up
                     </div>
                   </div>

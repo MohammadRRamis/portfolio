@@ -9,9 +9,9 @@ import Role from '../public/assets/role.png';
 
 const Work = () => {
   return (
-    <div id='work' className='bg-[#272727] relative px-44'>
+    <div id='work' className='bg-[#272727] relative px-44 py-16'>
       <div className='flex flex-col items-center'>
-        <h1 className='uppercase text-[#6FC2FF]  py-20'>UX CASE STUDIES</h1>
+        <h1 className='uppercase text-[#6FC2FF]  pb-20'>UX CASE STUDIES</h1>
         <div className='flex'>
           <a
             target='_blank'
@@ -65,8 +65,8 @@ const Work = () => {
                 <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
                   <h2>Joon Pet Supplies Store</h2>
                   <p>
-                    Designing a website that enhances the experience of
-                    shopping for pet supplies.
+                    Designing a website that enhances the experience of shopping
+                    for pet supplies.
                   </p>
                   <div className='flex items-center'>
                     <Image src={Duration} alt='image' layout='fill' />
