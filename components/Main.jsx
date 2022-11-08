@@ -12,7 +12,7 @@ const Main = () => {
         </h1>
         <p className='max-w-4xl leading-10 pb-16'>
           I&#39;m <span>M</span>ohammad Al <span>Ra</span>mis, a UX/UI designer
-          with background in software engineering. I strive to connect the dots
+          with a background in software engineering. I strive to connect the dots
           between software development and UX.
         </p>
         <Scroll to='about' spy={true} smooth={true}>
