@@ -1,162 +1,55 @@
 import React from 'react';
-import Image from 'next/future/image';
 import Misk from '../public/assets/misk.png';
 import Abha from '../public/assets/abha.png';
-import Pets from '../public/assets/pets.png';
-import Kids from '../public/assets/kids.png';
-import Duration from '../public/assets/duration.png';
-import Role from '../public/assets/role.png';
+import Joon from '../public/assets/joon.png';
+import ProjectMobile from './ProjectMobile';
+import ProjectDesktop from './ProjectDesktop';
 
 const Work = () => {
   return (
-    <div id='work' className='bg-[#272727] relative px-44 py-16'>
+    <div id='work' className='bg-[#272727] relative px-44 py-16 space-y-10'>
+      <h1 className='text-blue text-center pb-4'>UX CASE STUDIES</h1>
       <div className='flex flex-col items-center'>
-        <h1 className='uppercase text-[#6FC2FF]  pb-20'>UX CASE STUDIES</h1>
-        <div className='flex'>
-          <a
-            target='_blank'
-            href='https://bootcamp.uxdesign.cc/case-study-improving-the-experience-of-sports-activities-in-abha-47bd3d0415d'
-            rel='noopener noreferrer'
-          >
-            <div className='relative w-auto object-contain cursor-pointer group '>
-              <Image
-                className='transition-opacity duration-500 ease-in-out group-hover:opacity-20'
-                src={Abha}
-                alt='image'
-                layout='fill'
-              />
-              <div className='absolute top-0 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100'>
-                <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
-                  <h2>Bahiya Adventures</h2>
-                  <p>
-                    Designing an app that enhances the experience of sports
-                    activities in Abha.
-                  </p>
-                  <div className='flex items-center'>
-                    <Image src={Duration} alt='image' layout='fill' />
-                    <h3>
-                      <span>Duration:</span> 3 Weeks
-                    </h3>
-                  </div>
-                  <div className='flex items-center'>
-                    <Image src={Role} alt='image' layout='fill' />
-                    <h3>
-                      <span>Role:</span> UX/UI designer
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a
-            target='_blank'
-            href='https://bootcamp.uxdesign.cc/ux-case-study-designing-a-website-for-a-pet-store-7d14e68750cd'
-            rel='noopener noreferrer'
-          >
-            <div className='relative w-auto object-contain cursor-pointer group '>
-              <Image
-                className='transition-opacity duration-500 ease-in-out group-hover:opacity-20'
-                src={Pets}
-                alt='image'
-                layout='fill'
-              />
-              <div className='absolute top-0 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100'>
-                <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
-                  <h2>Joon Pet Supplies Store</h2>
-                  <p>
-                    Designing a website that enhances the experience of shopping
-                    for pet supplies.
-                  </p>
-                  <div className='flex items-center'>
-                    <Image src={Duration} alt='image' layout='fill' />
-                    <h3>
-                      <span>Duration:</span> 2 Weeks
-                    </h3>
-                  </div>
-                  <div className='flex items-center'>
-                    <Image src={Role} alt='image' layout='fill' />
-                    <h3>
-                      <span>Role:</span> UX designer
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div className='flex'>
-          <a
-            target='_blank'
-            href='https://bootcamp.uxdesign.cc/ux-case-study-task-management-application-for-kids-c9525066ddc8'
-            rel='noopener noreferrer'
-          >
-            <div className='relative w-auto object-contain cursor-pointer group '>
-              <Image
-                className='transition-opacity duration-500 ease-in-out group-hover:opacity-20'
-                src={Kids}
-                alt='image'
-                layout='fill'
-              />
-              <div className='absolute top-0 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100'>
-                <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
-                  <h2>Kids Tasks</h2>
-                  <p>
-                    Designing an app that facilitates the process of assigning
-                    tasks to kids.
-                  </p>
-                  <div className='flex items-center'>
-                    <Image src={Duration} alt='image' layout='fill' />
-                    <h3>
-                      <span>Duration:</span> 1 Week
-                    </h3>
-                  </div>
-                  <div className='flex items-center'>
-                    <Image src={Role} alt='image' layout='fill' />
-                    <h3>
-                      <span>Role:</span> UX designer
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <div className='relative w-auto object-contain cursor-default group '>
-            <Image
-              className='transition-opacity duration-500 ease-in-out group-hover:opacity-20'
-              src={Misk}
-              alt='image'
-              layout='fill'
-            />
-            <div className='absolute top-0 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100'>
-              <div className='flex flex-col text-center items-center justify-evenly w-[500px] h-[500px] px-11 py-11'>
-                <h2>Misk Hub Program Enrollment</h2>
-                <p>
-                  Enhancing the enrollment journey of all program tracks in the
-                  Misk Hub platform.
-                </p>
-                <div className='flex items-center'>
-                  <Image src={Duration} alt='image' layout='fill' />
-                  <h3>
-                    <span>Duration:</span> 3 Weeks
-                  </h3>
-                </div>
-                <div className='flex items-center'>
-                  <Image src={Role} alt='image' layout='fill' />
-                  <h3>
-                    <span>Role:</span> UX designer
-                  </h3>
-                </div>
-                <p className='text-[#6FC2FF]'>
-                  Can&#39;t be disclosed publicly due to a non-disclosure
-                  agreement
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectMobile
+          backgroundColor='bg-[#21B592]'
+          image={Misk}
+          width={295}
+          height={318}
+          title={'Misk Hub Program Enrollment'}
+          description={
+            'Enhancing the enrollment journey of all program tracks in the Misk Hub platform.'
+          }
+          duration={' 3 Weeks'}
+          role={' UX designer'}
+        />
+      </div>
+      <div className='flex flex-col items-center'>
+        <ProjectMobile
+          backgroundColor='bg-[#5C97D2]'
+          image={Abha}
+          width={295}
+          height={317}
+          title={'Bahiya Adventures'}
+          description={
+            'Designing an app that enhances the experience of sports activities in Abha.'
+          }
+          duration={' 3 Weeks'}
+          role={'UX/UI designer'}
+        />
+      </div>
+      <div className='flex flex-col items-center'>
+        <ProjectDesktop
+          backgroundColor='bg-[#C8B036]'
+          image={Joon}
+          width={420}
+          height={290}
+          title={'Joon Pet Supplies Store'}
+          description={
+            'Designing a website that enhances the experience of the users.'
+          }
+          duration={' 2 Weeks'}
+          role={' UX designer'}
+        />
       </div>
     </div>
   );
