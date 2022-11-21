@@ -45,7 +45,7 @@ const Work = () => {
           height={290}
           title={'Joon Pet Supplies Store'}
           description={
-            'Designing a website that enhances the experience of the users.'
+            'Designing a website that enhances the experience of shopping for pet supplies.'
           }
           duration={' 2 Weeks'}
           role={' UX designer'}
