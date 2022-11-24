@@ -34,7 +34,7 @@ const Work = () => {
             'Designing an app that enhances the experience of sports activities in Abha.'
           }
           duration={' 3 Weeks'}
-          role={'UX/UI designer'}
+          role={' UX/UI designer'}
         />
       </div>
       <div className='flex flex-col items-center'>
@@ -45,7 +45,7 @@ const Work = () => {
           height={290}
           title={'Joon Pet Supplies Store'}
           description={
-            'Designing a website that enhances the experience of the users.'
+            'Designing a website that enhances the experience of shopping for pet supplies.'
           }
           duration={' 2 Weeks'}
           role={' UX designer'}

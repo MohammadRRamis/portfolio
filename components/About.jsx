@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Mra from '../public/assets/mra.png';
 import Deadeye from '../public/assets/deadeye.png';
 

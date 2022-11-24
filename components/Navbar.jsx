@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import { Link as Scroll } from 'react-scroll';
@@ -10,11 +10,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-12 2xl:px-16 py-6 '>
         <Link href='/'>
           <div className='w-[140px] cursor-pointer'>
-            <Image
-              src={Logo}
-              alt='image'
-              layout='fill'
-            />
+            <Image src={Logo} alt='image' />
           </div>
         </Link>
         <div>

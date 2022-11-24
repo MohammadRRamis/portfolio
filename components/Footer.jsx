@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/future/image';
-import Link from 'next/link';
+import Image from 'next/image';
 import Twitter from '../public/assets/twitter.png';
 import Medium from '../public/assets/medium.png';
 import Linkedin from '../public/assets/linkedin.png';
@@ -17,7 +16,7 @@ const Footer = () => {
           rel='noopener noreferrer'
         >
           <div className='relative w-auto object-contain cursor-pointer bg-[#D8E2E7] p-2 hover:bg-[#6FC2FF] transition-all duration-300 ease-in-out'>
-            <Image src={Twitter} alt='image' layout='fill' />
+            <Image src={Twitter} alt='image' />
           </div>
         </a>
         <a
@@ -26,7 +25,7 @@ const Footer = () => {
           rel='noopener noreferrer'
         >
           <div className='relative w-auto object-contain cursor-pointer bg-[#D8E2E7] p-2 hover:bg-[#6FC2FF] transition-all duration-300 ease-in-out'>
-            <Image src={Medium} alt='image' layout='fill' />
+            <Image src={Medium} alt='image' />
           </div>
         </a>
         <a
@@ -35,7 +34,7 @@ const Footer = () => {
           rel='noopener noreferrer'
         >
           <div className='relative w-auto object-contain cursor-pointer bg-[#D8E2E7] p-2 hover:bg-[#6FC2FF] transition-all duration-300 ease-in-out'>
-            <Image src={Linkedin} alt='image' layout='fill' />
+            <Image src={Linkedin} alt='image' />
           </div>
         </a>
         <a
@@ -44,7 +43,7 @@ const Footer = () => {
           rel='noopener noreferrer'
         >
           <div className='relative w-auto object-contain cursor-pointer bg-[#D8E2E7] p-2 hover:bg-[#6FC2FF] transition-all duration-300 ease-in-out'>
-            <Image src={Github} alt='image' layout='fill' />
+            <Image src={Github} alt='image' />
           </div>
         </a>
         <a
@@ -53,7 +52,7 @@ const Footer = () => {
           rel='noopener noreferrer'
         >
           <div className='relative w-auto object-contain cursor-pointer bg-[#D8E2E7] p-2 hover:bg-[#6FC2FF] transition-all duration-300 ease-in-out'>
-            <Image src={Email} alt='image' layout='fill' />
+            <Image src={Email} alt='image' />
           </div>
         </a>
       </div>

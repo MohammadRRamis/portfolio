@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Duration from '../public/assets/duration.png';
 import Role from '../public/assets/role.png';
 
