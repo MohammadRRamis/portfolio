@@ -28,6 +28,11 @@ module.exports = {
       animation: {
         show: 'show 0.5s ease-out',
       },
+      screens: {
+        '1.5xl': '1440px',
+        '3xl': '1920px',
+        '4xl': '2560px',
+      },
     },
   },
   plugins: [],

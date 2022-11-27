@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className='relative flex items-center'>
       {/* Text */}
-      <div className='px-12 2xl:px-16'>
+      <div className='xl:px-8 px-12 2xl:px-16'>
         <h1 className='pb-11'>
           Hey! This is <span>MRA</span>
         </h1>
@@ -24,7 +24,7 @@ const Main = () => {
       </div>
 
       {/* Image */}
-      <div className='absolute 2xl:right-[200px] lg:right-[100px] bottom-0 z-[99] 2xl:w-[500px] w-[389px] object-contain'>
+      <div className='absolute 2xl:right-[10%] right-[5%] bottom-0 z-[99] 4xl:w-[600px] 3xl:w-[470px] 1.5xl:w-[400px] w-[380px] object-contain'>
         <Image src={Me} alt='image' />
       </div>
 

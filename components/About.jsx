@@ -25,8 +25,8 @@ const About = () => {
             <h1
               className={
                 about
-                  ? 'transition-opacity duration-500 ease-in pb-10'
-                  : 'transition-opacity duration-500 ease-in pb-10 opacity-60'
+                  ? 'transition-opacity 1.5xl:text-6xl xl:text-5xl duration-500 ease-in pb-20'
+                  : 'transition-opacity 1.5xl:text-6xl xl:text-5xl duration-500 ease-in pb-20 opacity-60'
               }
             >
               MRA
@@ -108,14 +108,14 @@ const About = () => {
             <h1
               className={
                 about
-                  ? 'text-[#F8F9FA] text-right transition-opacity duration-500 ease-in pb-10 opacity-60'
-                  : 'text-[#F8F9FA] text-right transition-opacity duration-500 ease-in pb-10'
+                  ? 'text-[#F8F9FA] 1.5xl:text-6xl xl:text-5xl text-right transition-opacity duration-500 ease-in pb-20 opacity-60'
+                  : 'text-[#F8F9FA] 1.5xl:text-6xl xl:text-5xl text-right transition-opacity duration-500 ease-in pb-20'
               }
             >
               DeadEye
             </h1>
-            <div className='pl-60  space-y-20'>
-              <div className={about ? 'hidden' : 'space-y-20 animate-show'}>
+            <div className='pl-60'>
+              <div className={about ? 'hidden' : 'space-y-14 animate-show'}>
                 <div className='flex w-full justify-center space-x-5'>
                   <div className='w-60 h-60 text-white text-center animate-show'>
                     <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
