@@ -15,13 +15,13 @@ const ProjectDesktop = ({
 }) => {
   return (
     <div
-      className={`flex ${backgroundColor} text-tBlack w-[840px] h-[336px] pr-8`}
+      className={`flex ${backgroundColor} text-tBlack w-[840px] h-[336px] pr-8 cursor-pointer hover:pr-0 transition-all duration-500`}
     >
       <div className='flex items-center w-full h-[336px] pr-10'>
         <Image src={image} alt='Project image' width={width} height={height} />
       </div>
 
-      <div className='flex flex-col py-8 space-y-4'>
+      <div className='flex flex-col py-8 space-y-4 mr-2'>
         <h2>{title}</h2>
         <p className='text-xl'>{description}</p>
         <div className='pt-2 space-y-4'>

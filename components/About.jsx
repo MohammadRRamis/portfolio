@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Mra from '../public/assets/mra.png';
-import Deadeye from '../public/assets/deadeye.png';
+import Mra from '../public/assets/mra.webp';
+import Deadeye from '../public/assets/deadeye.webp';
 
 const About = () => {
   const [about, setAbout] = useState(true);
@@ -78,7 +78,7 @@ const About = () => {
                 >
                   <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
                     Likes to expand his knowledge by reading articles related to
-                    UX design
+                    software engineering
                   </div>
                 </div>
               </div>

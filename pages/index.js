@@ -5,8 +5,16 @@ import Main from '../components/Main';
 import Work from '../components/Work';
 import Navbar from '../components/Navbar';
 import Preloader from '../components/Preloader';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 2500);
+  }, []);
+
   return (
     <>
       <Head>
@@ -17,15 +25,18 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.png' />
       </Head>
-      <div className='hidden lg:block'>
-        <Navbar />
-        <Main />
-        <Work />
-        <About />
-        <Footer />
-      </div>
-      <div className='lg:hidden flex justify-center items-center w-full h-screen text-center p-11'>
-        <h2>Sorry, this website is not yet optimized for mobile devices 😥</h2>
+      <div>
+        {loading ? (
+          <Preloader />
+        ) : (
+          <>
+            <Navbar />
+            <Main />
+            <Work />
+            <About />
+            <Footer />
+          </>
+        )}
       </div>
     </>
   );

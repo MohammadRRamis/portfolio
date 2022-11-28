@@ -15,7 +15,7 @@ const ProjectMobile = ({
 }) => {
   return (
     <div
-      className={`flex ${backgroundColor} text-tBlack w-[840px] h-[336px] px-8 `}
+      className={`flex ${backgroundColor} text-tBlack w-[840px] h-[336px] pt-2 px-8 cursor-pointer hover:pt-0 transition-all duration-200`}
     >
       <Image src={image} alt='Project image' width={width} height={height} />
 
