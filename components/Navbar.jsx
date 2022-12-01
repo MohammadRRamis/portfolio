@@ -14,36 +14,36 @@ const Navbar = () => {
 
   return (
     <div className='absolute w-full z-[100] '>
-      <div className='flex justify-between items-center w-full h-full px-12 2xl:px-16 py-6 '>
+      <div className='flex justify-between items-center w-full h-full 2xl:px-16 lg:px-12 px-4 py-6 '>
         <Link href='/'>
-          <div className='w-[140px] cursor-pointer'>
+          <div className='lg:w-[140px] w-[98px] cursor-pointer'>
             <Image src={Logo} alt='image' priority={true} />
           </div>
         </Link>
         <div>
           <div
-            className='w-[60px] h-[45px] relative rotate-0 ease-in-out duration-500'
+            className='lg:hidden w-[60px] h-[45px] relative rotate-0 ease-in-out duration-500'
             onClick={handleMenu}
           >
             <div
               className={
                 isMenu
-                  ? 'block absolute left-0 top-0 origin-[left_center] h-[9px] w-full bg-white rounded-[9px] opacity-100 rotate-0 ease-in-out duration-200'
-                  : 'block absolute left-[8px] top-[-3px] origin-[left_center] h-[9px] w-full bg-white rounded-[9px] opacity-100 rotate-45 ease-in-out duration-200'
+                  ? 'block absolute left-0 top-0 origin-[left_center] h-[3px] w-full bg-white rounded-[9px] opacity-100 rotate-0 ease-in-out duration-200'
+                  : 'block absolute left-[8px] top-[-3px] origin-[left_center] h-[3px] w-full bg-white rounded-[9px] opacity-100 rotate-45 ease-in-out duration-200'
               }
             ></div>
             <div
               className={
                 isMenu
-                  ? 'block absolute left-0 top-[18px] origin-[left_center] h-[9px] w-full bg-white rounded-[9px] opacity-100 rotate-0 ease-in-out duration-200'
-                  : 'block absolute left-0 top-[18px] origin-[left_center] h-[9px] w-0 bg-white rounded-[9px] opacity-0 rotate-0 ease-in-out duration-200'
+                  ? 'block absolute left-0 top-[18px] origin-[left_center] h-[3px] w-full bg-white rounded-[9px] opacity-100 rotate-0 ease-in-out duration-200'
+                  : 'block absolute left-0 top-[18px] origin-[left_center] h-[3px] w-0 bg-white rounded-[9px] opacity-0 rotate-0 ease-in-out duration-200'
               }
             ></div>
             <div
               className={
                 isMenu
-                  ? 'block absolute left-0 top-[36px] origin-[left_center] h-[9px] w-full bg-white rounded-[9px] opacity-100 rotate-0 ease-in-out duration-200'
-                  : 'block absolute left-[8px] top-[39px] origin-[left_center] h-[9px] w-full bg-white rounded-[9px] opacity-100 rotate-[-45deg] ease-in-out duration-200'
+                  ? 'block absolute left-0 top-[36px] origin-[left_center] h-[3px] w-full bg-white rounded-[9px] opacity-100 rotate-0 ease-in-out duration-200'
+                  : 'block absolute left-[8px] top-[39px] origin-[left_center] h-[3px] w-full bg-white rounded-[9px] opacity-100 rotate-[-45deg] ease-in-out duration-200'
               }
             ></div>
           </div>

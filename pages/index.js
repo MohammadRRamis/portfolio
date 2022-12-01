@@ -33,8 +33,10 @@ export default function Home() {
             <Navbar />
             <Main />
             <Work />
-            <About />
-            <Footer />
+            <div className='hidden'>
+              <About />
+              <Footer />
+            </div>
           </>
         )}
       </div>
