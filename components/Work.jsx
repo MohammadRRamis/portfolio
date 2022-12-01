@@ -18,8 +18,6 @@ const Work = () => {
         <ProjectMobile
           backgroundColor='bg-[#21B592]'
           image={Misk}
-          width={295}
-          mobileWidth={150.66}
           title={'Misk Hub Program Enrollment'}
           description={
             'Enhancing the enrollment journey of all program tracks in the Misk Hub platform.'
@@ -32,8 +30,6 @@ const Work = () => {
         <ProjectMobile
           backgroundColor='bg-[#5C97D2]'
           image={Abha}
-          width={295}
-          mobileWidth={150.66}
           title={'Bahiya Adventures'}
           description={
             'Designing an app that enhances the experience of sports activities in Abha.'
@@ -47,8 +43,6 @@ const Work = () => {
         <ProjectDesktop
           backgroundColor='bg-[#C8B036]'
           image={Joon}
-          width={420}
-          mobileWidth={215}
           title={'Joon Pet Supplies Store'}
           description={
             'Designing a website that enhances the experience of shopping for pet supplies.'

@@ -6,8 +6,6 @@ import Role from '../public/assets/role.png';
 const ProjectMobile = ({
   backgroundColor,
   image,
-  width,
-  mobileWidth,
   title,
   description,
   duration,
@@ -17,14 +15,14 @@ const ProjectMobile = ({
   return (
     <a target='_blank' href={link} rel='noopener noreferrer'>
       <div
-        className={`flex ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] pt-2 px-8 cursor-pointer lg:hover:pt-0 transition-all duration-200`}
+        className={`flex ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] pt-2 px-8 cursor-pointer transition-all duration-200`}
       >
         <div className='flex items-end'>
-          <div className={`lg:w-[${width}] w-[${mobileWidth}] `}>
+          <div className='lg:w-[295px] w-[150.66px]'>
             <Image
               src={image}
               alt='Project image'
-              sizes={`(min-width: 1024px) ${width}, ${mobileWidth}`}
+              sizes='(min-width: 1024px) 295px, 150.66px'
               // placeholder='blur'
             />
           </div>

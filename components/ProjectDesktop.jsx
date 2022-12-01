@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 import Image from 'next/image';
 import Duration from '../public/assets/duration.png';
 import Role from '../public/assets/role.png';
@@ -6,8 +7,6 @@ import Role from '../public/assets/role.png';
 const ProjectDesktop = ({
   backgroundColor,
   image,
-  width,
-  mobileWidth,
   title,
   description,
   duration,
@@ -17,14 +16,19 @@ const ProjectDesktop = ({
   return (
     <a target='_blank' href={link} rel='noopener noreferrer'>
       <div
-        className={`flex ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] lg:pr-8 cursor-pointer lg:hover:pr-0 transition-all duration-500`}
+        className={`flex relative ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] lg:pr-8 cursor-pointer hover:bg-black group transition-all duration-500`}
       >
+        <div className='absolute top-0 left-0 w-full h-full hidden group-hover:block'>
+          <div className='flex items-center justify-center w-full h-full'>
+            <Button text={'VIEW CASE STUDY'} />
+          </div>
+        </div>
         <div className='flex items-center'>
-          <div className={`lg:w-[${width}] w-[${mobileWidth}] lg:pr-10 pr-2`}>
+          <div className='lg:w-[420px] w-[215px] lg:pr-10 pr-2'>
             <Image
               src={image}
               alt='Project image'
-              sizes={`(min-width: 1024px) ${width}, ${mobileWidth}`}
+              sizes='(min-width: 1024px) 420px, 215px'
             />
           </div>
         </div>
