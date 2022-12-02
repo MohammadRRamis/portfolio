@@ -34,9 +34,7 @@ export default function Home() {
             <Main />
             <Work />
             <About />
-            <div className='hidden'>
-              <Footer />
-            </div>
+            <Footer />
           </>
         )}
       </div>

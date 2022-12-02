@@ -1,7 +1,7 @@
 import React from 'react';
-import Misk from '../public/assets/misk.webp';
-import Abha from '../public/assets/abha.webp';
-import Joon from '../public/assets/joon.webp';
+import Misk from '../public/assets/misk.png';
+import Abha from '../public/assets/abha.png';
+import Joon from '../public/assets/joon.png';
 import ProjectMobile from './ProjectMobile';
 import ProjectDesktop from './ProjectDesktop';
 

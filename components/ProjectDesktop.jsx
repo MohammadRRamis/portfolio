@@ -36,9 +36,7 @@ const ProjectDesktop = ({
           </div>
 
           <div className='flex flex-col lg:py-8 lg:space-y-4 py-4 space-y-1 lg:mr-2'>
-            <h2 className='lg:text-3xl text-[20.5px] leading-normal'>
-              {title}
-            </h2>
+            <h2 className='lg:text-3xl text-[16px] leading-normal'>{title}</h2>
             <p className='lg:text-xl text-[9.2px] leading-normal'>
               {description}
             </p>

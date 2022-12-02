@@ -18,29 +18,29 @@ const About = () => {
             onClick={handleAbout}
             className={
               about
-                ? 'bg-gwhite table-cell relative w-[80%] h-[750px] transition-all duration-500 ease-in p-11'
-                : 'bg-gwhite table-cell relative w-[20%] h-[750px] transition-all duration-500 ease-in p-11'
+                ? 'bg-gwhite table-cell relative lg:w-[80%] w-[60%] h-[750px] transition-all duration-500 ease-in p-11'
+                : 'bg-gwhite table-cell relative lg:w-[20%] w-[40%] h-[750px] transition-all duration-500 ease-in p-11'
             }
           >
             <h1
               className={
                 about
-                  ? 'transition-opacity 1.5xl:text-6xl xl:text-5xl duration-500 ease-in pb-20'
-                  : 'transition-opacity 1.5xl:text-6xl xl:text-5xl duration-500 ease-in pb-20 opacity-60'
+                  ? 'transition-opacity 1.5xl:text-6xl lg:text-5xl text-3xl duration-500 ease-in lg:pb-20 pb-2'
+                  : 'transition-opacity 1.5xl:text-6xl lg:text-5xl text-3xl duration-500 ease-in lg:pb-20 pb-2 opacity-60'
               }
             >
               MRA
             </h1>
-            <div className={'flex justify-center space-x-10'}>
-              <div className='space-y-10'>
+            <div className={'lg:flex lg:justify-center lg:space-x-10 space-y-1'}>
+              <div className='lg:space-y-10 space-y-1'>
                 <div
                   className={
                     about
-                      ? 'w-60 h-60 text-white text-center animate-show'
+                      ? 'lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'
                       : 'hidden'
                   }
                 >
-                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium lg:text-xl text-[8px] leading-normal'>
                     Front end web developer with interest in blockchain
                     technologies
                   </div>
@@ -48,35 +48,35 @@ const About = () => {
                 <div
                   className={
                     about
-                      ? 'w-60 h-60  text-white text-center animate-show'
+                      ? 'lg:w-60 lg:h-60 w-24 h-24  text-white text-center animate-show'
                       : 'hidden'
                   }
                 >
-                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium lg:text-xl text-[8px] leading-normal'>
                     Loves exploring new fields and knowing more about them
                   </div>
                 </div>
               </div>
-              <div className='space-y-10'>
+              <div className='lg:space-y-10 space-y-1'>
                 <div
                   className={
                     about
-                      ? 'w-60 h-60 text-white text-center animate-show'
+                      ? 'lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'
                       : 'hidden'
                   }
                 >
-                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium lg:text-xl text-[8px] leading-normal'>
                     Utilizes all the tools available to maximize productivity
                   </div>
                 </div>
                 <div
                   className={
                     about
-                      ? 'w-60 h-60  text-white text-center animate-show'
+                      ? 'lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'
                       : 'hidden'
                   }
                 >
-                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium text-xl'>
+                  <div className='flex items-center w-full h-full px-3 bg-gblack font-medium lg:text-xl text-[8px] leading-normal'>
                     Likes to expand his knowledge by reading articles related to
                     software engineering
                   </div>
@@ -92,7 +92,13 @@ const About = () => {
                     : 'flex flex-row-reverse items-end w-full h-[750px] transition-all duration-500 ease-in opacity-20'
                 }
               >
-                <Image src={Mra} alt='image' width='220' height='61' />
+                <div className='lg:w-[220px] w-[150px]'>
+                  <Image
+                    src={Mra}
+                    alt='image'
+                    sizes='(min-width: 1024px) 220px, 160px'
+                  />
+                </div>
               </div>
             </div>
           </li>
@@ -101,50 +107,35 @@ const About = () => {
             onClick={handleAbout}
             className={
               about
-                ? 'bg-gblack font-medium text-xl table-cell relative w-[20%] h-[750px] transition-all duration-500 ease-in p-11'
-                : 'bg-gblack font-medium text-xl table-cell relative w-[80%] h-[750px] transition-all duration-500 ease-in p-11'
+                ? 'bg-gblack font-medium text-xl table-cell relative lg:w-[20%] w-[40%] h-[750px] transition-all duration-500 ease-in lg:p-11'
+                : 'bg-gblack font-medium text-xl table-cell relative lg:w-[80%] w-[60%] h-[750px] transition-all duration-500 ease-in lg:p-11'
             }
           >
             <h1
               className={
                 about
-                  ? 'text-[#F8F9FA] 1.5xl:text-6xl xl:text-5xl text-right transition-opacity duration-500 ease-in pb-20 opacity-60'
-                  : 'text-[#F8F9FA] 1.5xl:text-6xl xl:text-5xl text-right transition-opacity duration-500 ease-in pb-20'
+                  ? 'text-[#F8F9FA] 1.5xl:text-6xl lg:text-5xl text-3xl lg:text-right text-center transition-opacity duration-500 ease-in lg:pb-20 pb-2 opacity-60'
+                  : 'text-[#F8F9FA] 1.5xl:text-6xl lg:text-5xl text-3xl lg:text-right text-center transition-opacity duration-500 ease-in lg:pb-20 pb-2'
               }
             >
               DeadEye
             </h1>
-            <div className='pl-60'>
+            <div className='lg:pl-60'>
               <div className={about ? 'hidden' : 'space-y-14 animate-show'}>
-                <div className='flex w-full justify-center space-x-5'>
-                  <div className='w-60 h-60 text-white text-center animate-show'>
-                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
+                <div className='flex lg:flex-row flex-col w-full lg:justify-center lg:items-start items-center lg:space-x-5 lg:space-y-0 space-y-1'>
+                  <div className='lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'>
+                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium lg:text-xl text-[8px] leading-normal text-black'>
                       Competitive esports player
                     </div>
                   </div>
-                  <div className='w-60 h-60 text-white text-center animate-show'>
-                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
+                  <div className='lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'>
+                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium lg:text-xl text-[8px] leading-normal text-black'>
                       Anime enthusiast
                     </div>
                   </div>
-                  <div className='w-60 h-60 text-white text-center animate-show'>
-                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium text-xl text-black'>
+                  <div className='lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'>
+                    <div className='flex items-center justify-center w-full h-full px-3 bg-gwhite font-medium lg:text-xl text-[8px] leading-normal text-black'>
                       Likes to build PCs
-                    </div>
-                  </div>
-                </div>
-
-                <div className='flex w-full items-center justify-center space-x-10'>
-                  <h3 className='text-[#6FC2FF]'>Learnings:</h3>
-                  <div className='flex space-x-5'>
-                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-white'>
-                      Teamwork skills
-                    </div>
-                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-white'>
-                      Always strive to become the best
-                    </div>
-                    <div className='flex justify-center items-center w-[200px] h-[200px] bg-[#212529] rounded-full text-center text-white'>
-                      Never give up
                     </div>
                   </div>
                 </div>
@@ -158,13 +149,13 @@ const About = () => {
                     : 'flex items-end justify-start w-full h-[750px] opacity-100'
                 }
               >
-                <Image
-                  className='select-none'
-                  src={Deadeye}
-                  alt='image'
-                  width='220'
-                  height='61'
-                />
+                <div className='lg:w-[220px] w-[150px]'>
+                  <Image
+                    src={Deadeye}
+                    alt='image'
+                    sizes='(min-width: 1024px) 220px, 160px'
+                  />
+                </div>
               </div>
             </div>
           </li>
