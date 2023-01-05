@@ -16,11 +16,11 @@ const ProjectDesktop = ({
   return (
     <a target='_blank' href={link} rel='noopener noreferrer'>
       <div
-        className={`flex relative ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] lg:pr-8 cursor-pointer hover:bg-black group transition-all duration-500`}
+        className={`flex relative ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] lg:pr-8 cursor-pointer hover:bg-white group transition-all duration-500`}
       >
         <div className='absolute top-0 left-0 w-full h-full hidden group-hover:block'>
           <div className='flex items-center justify-center w-full h-full'>
-            <Button text={'VIEW CASE STUDY'} />
+            <Button text={'VIEW CASE STUDY'} mainColor='black' hoverColor='white' />
           </div>
         </div>
 
