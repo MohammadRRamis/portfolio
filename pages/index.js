@@ -8,10 +8,10 @@ import Preloader from '../components/Preloader';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     setTimeout(() => setLoading(false), 2500);
   }, []);
 

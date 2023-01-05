@@ -24,7 +24,8 @@ const Work = () => {
           }
           duration={'3 Weeks'}
           role={'UX designer'}
-          link={'/'}
+          link={'/miskhub'}
+          externalLink={false}
         />
 
         <ProjectMobile
@@ -39,6 +40,7 @@ const Work = () => {
           link={
             'https://bootcamp.uxdesign.cc/case-study-improving-the-experience-of-sports-activities-in-abha-47bd3d0415d'
           }
+          externalLink={true}
         />
         <ProjectDesktop
           backgroundColor='bg-[#C8B036]'

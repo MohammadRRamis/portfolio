@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Duration from '../public/assets/duration.png';
 import Role from '../public/assets/role.png';
 import ProjectButton from './ProjectButton';
@@ -12,9 +13,14 @@ const ProjectMobile = ({
   duration,
   role,
   link,
+  externalLink,
 }) => {
   return (
-    <a target='_blank' href={link} rel='noopener noreferrer'>
+    <Link
+      target={externalLink ? '_blank' : ''}
+      href={link}
+      rel='noopener noreferrer'
+    >
       <div
         className={`flex relative ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] pt-2 px-8 cursor-pointer transition-all duration-500 hover:bg-white group`}
       >
@@ -67,7 +73,7 @@ const ProjectMobile = ({
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
