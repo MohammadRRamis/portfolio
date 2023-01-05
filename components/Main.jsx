@@ -37,7 +37,7 @@ const Main = () => {
         </p>
         {/* CTA Button */}
         <Scroll className='lg:block hidden' to='about' spy={true} smooth={true}>
-          <Button text={'More about me!'} mainColor='blue' hoverColor='white' />
+          <Button text={'More about me!'} />
         </Scroll>
       </div>
 

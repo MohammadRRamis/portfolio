@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from './Button';
 import Image from 'next/image';
 import Duration from '../public/assets/duration.png';
 import Role from '../public/assets/role.png';
+import ProjectButton from './ProjectButton';
 
 const ProjectMobile = ({
   backgroundColor,
@@ -20,11 +20,7 @@ const ProjectMobile = ({
       >
         <div className='absolute top-0 left-0 w-full h-full hidden group-hover:block'>
           <div className='flex items-center justify-center w-full h-full'>
-            <Button
-              text={'VIEW CASE STUDY'}
-              mainColor='black'
-              hoverColor='white'
-            />
+            <ProjectButton text={'VIEW CASE STUDY'} />
           </div>
         </div>
         <div className='flex group-hover:hidden'>
