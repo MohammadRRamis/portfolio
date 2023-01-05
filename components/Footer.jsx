@@ -56,7 +56,9 @@ const Footer = () => {
           </div>
         </a>
       </div>
-      <p className='text-center pt-1'>Mohammad Al Ramis &#169;2022</p>
+      <p className='text-center pt-1'>
+        Mohammad Al Ramis &#169;{new Date().getFullYear()}
+      </p>
     </div>
   );
 };
