@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Process from '../../public/assets/miskhub/design_process.png';
 const Overview = () => {
   return (
-    <div className='flex flex-col space-y-12 items-center'>
+    <div className='flex flex-col items-center space-y-12'>
       <div>
         <dl className='text-center'>
           <dt>
@@ -51,7 +51,7 @@ const Overview = () => {
             </dl>
           </div>
         </div>
-        <div className='space-y-8 max-w-md'>
+        <div className='max-w-md space-y-8'>
           <div>
             <dt>
               <h2>Tools</h2>
@@ -69,13 +69,13 @@ const Overview = () => {
             </dt>
             <dl>
               <p>
-                Involved in all of the process but mostly focused on research.
+                Involved in all of the process but mostly focused on auditing and research.
               </p>
             </dl>
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center space-y-8'>
+      <div className='flex flex-col items-center justify-center space-y-8'>
         <h2>Design Process</h2>
         <div>
           <Image src={Process} alt='image' />

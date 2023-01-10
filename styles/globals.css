@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-poppins tracking-wide;
+    @apply tracking-wide text-white bg-black font-poppins;
   }
 
   h1 {
-    @apply font-semibold text-6xl;
+    @apply text-6xl font-semibold;
   }
 
   h2,
@@ -34,15 +34,15 @@
   }
 
   ul {
-    @apply list-disc list-inside text-lg space-y-4;
+    @apply space-y-4 text-lg list-disc list-inside;
   }
 
   ol {
-    @apply list-decimal list-outside text-lg space-y-4;
+    @apply space-y-4 text-lg list-decimal list-inside;
   }
 
   li {
-    @apply font-light text-lg pl-4;
+    @apply pl-4 text-lg font-light;
   }
 
   span {

@@ -5,6 +5,7 @@ import Logo from '../public/assets/logo.png';
 import MiskScreen from '../public/assets/miskhub/misk_screen.webp';
 import Overview from '../components/miskhub/Overview';
 import Audit from '../components/miskhub/Audit';
+import Research  from '../components/miskhub/Research';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
 
       <div className='w-full h-full py-6 2xl:px-16 lg:px-12'>
         <div className='fixed z-50'>
-          <div className=' top-0 left-0 flex items-center pb-12'>
+          <div className='top-0 left-0 flex items-center pb-12 '>
             <Link href='/'>
               <div className='lg:w-[140px] w-[98px] cursor-pointer'>
                 <Image src={Logo} alt='image' priority={true} />
@@ -26,8 +27,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className='space-y-20 flex flex-col justify-center items-center'>
-          <div className='flex w-full justify-center items-center space-x-52 '>
+        <div className='flex flex-col items-center justify-center space-y-20'>
+          <div className='flex items-center justify-center w-full space-x-52 '>
             <h1 className='text-[#21B592] w-72 '>
               Misk Hub Program Enrollment
             </h1>
@@ -36,9 +37,10 @@ export default function Home() {
               <Image src={MiskScreen} alt='image' priority={true} />
             </div>
           </div>
-          <div className=' flex flex-col justify-center items-center w-full max-w-7xl space-y-32'>
+          <div className='flex flex-col items-center justify-center w-full space-y-32 max-w-7xl'>
             <Overview />
             <Audit />
+            <Research />
           </div>
         </div>
       </div>

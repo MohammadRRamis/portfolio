@@ -20,7 +20,7 @@ const Audit = () => {
   return (
     <div className='flex flex-col items-center space-y-16'>
       <h1 className='text-[#F36D50]'>Audit</h1>
-      <div className='flex space-x-32 py-8 justify-center'>
+      <div className='flex justify-center py-8 space-x-32'>
         <p className='max-w-[400px]'>
           In order to identify the current usability problems in the product, I
           examined the design of the current enrollment journey in Misk Hub
@@ -30,14 +30,14 @@ const Audit = () => {
           <Image src={Pages} alt='image' />
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center space-y-4'>
+      <div className='flex flex-col items-center justify-center space-y-4'>
         <h2 className='pb-4'>All Programs Page</h2>
         <h3>Tracks Description</h3>
         <p>
           There is no description for each track on the all programs page.
           However, the description exists on the home page instead.
         </p>
-        <div className='grid grid-cols-2 gap-x-5 gap-y-5 items-center justify-center content-center'>
+        <div className='grid items-center content-center justify-center grid-cols-2 gap-x-5 gap-y-5'>
           <div>
             <Image src={leadership} alt='image' width={588} height={214} />
           </div>
@@ -57,11 +57,11 @@ const Audit = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center space-y-8'>
+      <div className='flex flex-col items-center justify-center space-y-8'>
         <h2 className='pb-4'>Specific Program Page</h2>
         <ol>
           <li>
-            <h3>Content Structure & Language</h3>
+            <h3 className='inline'>Content Structure & Language</h3>
           </li>
           <p>
             for the specific program page, I noticed that the content inside it
@@ -87,14 +87,14 @@ const Audit = () => {
             </div>
           </div>
           <li>
-            <h3 className='pt-8'>External Websites</h3>
+            <h3 className='inline pt-8'>External Websites</h3>
           </li>
           <p>
             I noticed that there are many programs on Misk Hub that requires the
             user to complete the enrollment process through a Misk subsidiary
             website.
           </p>
-          <div className='flex space-x-4 justify-center item'>
+          <div className='flex justify-center space-x-4 item'>
             <Image src={innovation} alt='image' />
 
             <Image
@@ -109,17 +109,17 @@ const Audit = () => {
         <h2 className='pb-4'>Application Forms</h2>
         <ol>
           <li>
-            <h3>Cluttered Forms</h3>
+            <h3 className='inline'>Cluttered Forms</h3>
           </li>
           <p>
             The application form page can be a long scrollable page with many
             questions.
           </p>
-          <div className='flex justify-center items-center'>
+          <div className='flex items-center justify-center'>
             <Image src={clutter} alt='image' />
           </div>
           <li className='pt-8'>
-            <h3>Enrollment Status</h3>
+            <h3 className='inline'>Enrollment Status</h3>
           </li>
           <p>
             After submitting the application form, the user isn’t directed to
