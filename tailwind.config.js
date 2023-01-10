@@ -14,6 +14,7 @@ module.exports = {
         tBlack: '#212529',
         white: '#F8F9FA',
         blue: '#6FC2FF',
+        green: '#21B592',
       },
       backgroundImage: {
         gwhite: 'linear-gradient(0deg, #cfd9df 0%, #e2ebf0 100%)',

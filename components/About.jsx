@@ -18,8 +18,8 @@ const About = () => {
             onClick={handleAbout}
             className={
               about
-                ? 'bg-gwhite table-cell relative lg:w-[80%] w-[60%] h-[750px] transition-all duration-500 ease-in p-11'
-                : 'bg-gwhite table-cell relative lg:w-[20%] w-[40%] h-[750px] transition-all duration-500 ease-in p-11'
+                ? 'bg-gwhite table-cell relative lg:w-[80%] w-[60%] h-[750px] transition-all duration-500 ease-in p-11 cursor-pointer font-medium text-xl'
+                : 'bg-gwhite table-cell relative lg:w-[20%] w-[40%] h-[750px] transition-all duration-500 ease-in p-11 cursor-pointer font-medium text-xl'
             }
           >
             <h1
@@ -31,7 +31,9 @@ const About = () => {
             >
               MRA
             </h1>
-            <div className={'lg:flex lg:justify-center lg:space-x-10 space-y-1'}>
+            <div
+              className={'lg:flex lg:justify-center lg:space-x-10 space-y-1'}
+            >
               <div className='lg:space-y-10 space-y-1'>
                 <div
                   className={
@@ -107,8 +109,8 @@ const About = () => {
             onClick={handleAbout}
             className={
               about
-                ? 'bg-gblack font-medium text-xl table-cell relative lg:w-[20%] w-[40%] h-[750px] transition-all duration-500 ease-in lg:p-11'
-                : 'bg-gblack font-medium text-xl table-cell relative lg:w-[80%] w-[60%] h-[750px] transition-all duration-500 ease-in lg:p-11'
+                ? 'bg-gblack font-medium text-xl table-cell relative lg:w-[20%] w-[40%] h-[750px] transition-all duration-500 ease-in lg:p-11 cursor-pointer'
+                : 'bg-gblack font-medium text-xl table-cell relative lg:w-[80%] w-[60%] h-[750px] transition-all duration-500 ease-in lg:p-11 cursor-pointer'
             }
           >
             <h1

@@ -30,14 +30,36 @@
   }
 
   p {
-    @apply text-2xl font-light;
+    @apply text-lg font-light;
+  }
+
+  ul {
+    @apply list-disc list-inside text-lg space-y-4;
+  }
+
+  ol {
+    @apply list-decimal list-outside text-lg space-y-4;
   }
 
   li {
-    @apply cursor-pointer font-medium text-xl text-[#212529];
+    @apply font-light text-lg pl-4;
   }
 
   span {
     @apply text-blue;
+  }
+
+  dt {
+    @apply pb-4;
+  }
+
+  dd {
+    @apply pl-4;
+  }
+}
+
+@layer component {
+  .bold {
+    @apply font-medium text-xl text-[#2FB696];
   }
 }

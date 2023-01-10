@@ -30,7 +30,7 @@ const Main = () => {
         <h1 className='lg:pb-11 pb-5 leading-[87px] lg:text-6xl lg:text-left text-[58px] text-center'>
           Hey! This is <span>MRA</span>
         </h1>
-        <p className='max-w-4xl leading-10 pb-16 lg:text-2xl lg:text-left text-center text-[23px] lg:px-0 md:px-24'>
+        <p className='max-w-4xl leading-10 pb-16 lg:text-2xl lg:text-left text-center text-[23px] lg:px-0 md:px-24 text-2xl'>
           I&#39;m <span>M</span>ohammad Al <span>Ra</span>mis, a UX/UI designer
           with background in software engineering. I strive to connect the dots
           between software development and UX.

@@ -22,14 +22,14 @@ const ProjectMobile = ({
       rel='noopener noreferrer'
     >
       <div
-        className={`flex relative ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] pt-2 px-8 cursor-pointer transition-all duration-500 hover:bg-white group`}
+        className={`flex relative ${backgroundColor} text-tBlack lg:w-[840px] w-full lg:h-[336px] h-[180px] pt-2 px-8 cursor-pointer transition-all duration-500 lg:hover:bg-white group`}
       >
-        <div className='absolute top-0 left-0 w-full h-full hidden group-hover:block'>
+        <div className='absolute top-0 left-0 w-full h-full hidden lg:group-hover:block'>
           <div className='flex items-center justify-center w-full h-full'>
             <ProjectButton text={'VIEW CASE STUDY'} />
           </div>
         </div>
-        <div className='flex group-hover:hidden'>
+        <div className='flex lg:group-hover:hidden'>
           <div className='flex items-end'>
             <div className='lg:w-[295px] w-[150.66px]'>
               <Image
@@ -43,7 +43,7 @@ const ProjectMobile = ({
 
           <div className='flex flex-col lg:py-8 lg:space-y-4 py-4 space-y-1'>
             <h2 className='lg:text-3xl text-[16px] leading-normal'>{title}</h2>
-            <p className='lg:text-xl text-[9.2px] leading-normal'>
+            <p className='lg:text-xl text-[9.2px] leading-normal text-2xl'>
               {description}
             </p>
             <div className='pt-2 lg:space-y-4 space-y-2'>
@@ -51,7 +51,7 @@ const ProjectMobile = ({
                 <div className='lg:w-[28px] w-[14.3px]'>
                   <Image src={Duration} alt='Duration' />
                 </div>
-                <p className='lg:text-xl text-[10.2px] font-semibold pl-1'>
+                <p className='lg:text-xl text-[10.2px] font-semibold pl-1 text-2xl'>
                   Duration:
                   <span className='lg:text-xl text-[10.2px] font-semibold text-white'>
                     {' ' + duration}
@@ -62,7 +62,7 @@ const ProjectMobile = ({
                 <div className='lg:w-[28px] w-[14.3px]'>
                   <Image src={Role} alt='Duration' />
                 </div>
-                <p className='lg:text-xl text-[10.2px] font-semibold pl-1'>
+                <p className='lg:text-xl text-[10.2px] font-semibold pl-1 text-2xl'>
                   Role:
                   <span className='lg:text-xl text-[10.2px] font-semibold text-white'>
                     {' ' + role}
