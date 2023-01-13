@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import oldUserFlow from '../../public/assets/miskhub/oldUserFlow.webp';
-import newUserFlow from '../../public/assets/miskhub/newUserFlow.webp';
+import oldUserFlow from '../../public/assets/miskhub/oldUserflow.webp';
+import newUserFlow from '../../public/assets/miskhub/newUserflow.webp';
 
 const Ideate = () => {
   return (
