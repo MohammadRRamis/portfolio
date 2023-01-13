@@ -25,14 +25,16 @@ const About = () => {
             <h1
               className={
                 about
-                  ? 'transition-opacity 1.5xl:text-6xl lg:text-5xl text-3xl duration-500 ease-in lg:pb-20 pb-2'
-                  : 'transition-opacity 1.5xl:text-6xl lg:text-5xl text-3xl duration-500 ease-in lg:pb-20 pb-2 opacity-60'
+                  ? 'transition-opacity 1.5xl:text-6xl lg:text-5xl text-3xl duration-500 ease-in lg:pb-10 pb-2 text-tBlack'
+                  : 'transition-opacity 1.5xl:text-6xl lg:text-5xl text-3xl duration-500 ease-in lg:pb-10 pb-2 opacity-60 text-tBlack'
               }
             >
               MRA
             </h1>
             <div
-              className={'lg:flex lg:justify-center lg:space-x-10 space-y-1'}
+              className={
+                'lg:flex lg:justify-center lg:space-x-10 lg:space-y-0 space-y-1'
+              }
             >
               <div className='lg:space-y-10 space-y-1'>
                 <div
@@ -43,8 +45,7 @@ const About = () => {
                   }
                 >
                   <div className='flex items-center w-full h-full px-3 bg-gblack font-medium lg:text-xl text-[8px] leading-normal'>
-                    Front end web developer with interest in blockchain
-                    technologies
+                    Full stack web developer with interest in cloud computing
                   </div>
                 </div>
                 <div
@@ -68,7 +69,8 @@ const About = () => {
                   }
                 >
                   <div className='flex items-center w-full h-full px-3 bg-gblack font-medium lg:text-xl text-[8px] leading-normal'>
-                    Utilizes all the tools available to maximize productivity
+                    Likes to utilize all the tools available to maximize
+                    productivity
                   </div>
                 </div>
                 <div
@@ -122,7 +124,7 @@ const About = () => {
             >
               DeadEye
             </h1>
-            <div className='lg:pl-60'>
+            <div className='lg:pl-60 lg:py-16'>
               <div className={about ? 'hidden' : 'space-y-14 animate-show'}>
                 <div className='flex lg:flex-row flex-col w-full lg:justify-center lg:items-start items-center lg:space-x-5 lg:space-y-0 space-y-1'>
                   <div className='lg:w-60 lg:h-60 w-24 h-24 text-white text-center animate-show'>

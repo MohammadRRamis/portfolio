@@ -5,17 +5,22 @@ const icon = {
   hidden: {
     pathLength: 0,
     pathOffset: 0,
+    fill: 'rgba(255, 255, 255, 0)',
   },
   visible: {
     pathLength: 1,
     pathOffset: 0,
+    fill: 'rgba(255, 255, 255, 1)',
   },
 };
 
 const Preloader = () => {
   return (
-    <div className='flex items-center justify-center w-full h-screen overflow-hidden'>
-      <motion.svg
+    <div
+      id='loader'
+      className='flex items-center justify-center w-full h-screen overflow-hidden'
+    >
+      <svg
         className='overflow-visible'
         width='227'
         height='90'
@@ -68,7 +73,7 @@ const Preloader = () => {
             }}
           />
         </g>
-      </motion.svg>
+      </svg>
     </div>
   );
 };

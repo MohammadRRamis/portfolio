@@ -4,17 +4,8 @@ import Footer from '../components/Footer';
 import Main from '../components/Main';
 import Work from '../components/Work';
 import Navbar from '../components/Navbar';
-import Preloader from '../components/Preloader';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // setLoading(true);
-    setTimeout(() => setLoading(false), 2500);
-  }, []);
-
   return (
     <>
       <Head>
@@ -26,17 +17,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.png' />
       </Head>
       <div>
-        {loading ? (
-          <Preloader />
-        ) : (
-          <>
-            <Navbar />
-            <Main />
-            <Work />
-            <About />
-            <Footer />
-          </>
-        )}
+        <Navbar />
+        <Main />
+        <Work />
+        <About />
+        <Footer />
       </div>
     </>
   );

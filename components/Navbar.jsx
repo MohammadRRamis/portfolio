@@ -21,18 +21,18 @@ const Navbar = () => {
             : 'fixed z-50 flex items-center justify-center text-center w-screen h-full bg-black'
         }
       >
-        <ul className='space-y-16'>
-          <li className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
+        <div className='space-y-16'>
+          <div className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
             <Scroll to='work' spy={true} smooth={true} onClick={handleMenu}>
               Work
             </Scroll>
-          </li>
-          <li className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
+          </div>
+          <div className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
             <Scroll to='about' spy={true} smooth={true} onClick={handleMenu}>
               About
             </Scroll>
-          </li>
-          <li className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
+          </div>
+          <div className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
             <a
               target='_blank'
               href='https://drive.google.com/file/d/1xPqqhQoCWR8yNGmVsa_J0sAUMqoK8d9_/view?usp=sharing'
@@ -40,8 +40,8 @@ const Navbar = () => {
             >
               CV
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <div className={'absolute w-full z-[100]'}>
         <div className='flex justify-between items-center w-full h-full 2xl:px-16 lg:px-12 px-4 py-6 '>
@@ -78,18 +78,18 @@ const Navbar = () => {
               ></div>
             </div>
 
-            <ul className={'lg:flex hidden'}>
-              <li className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
+            <div className={'lg:flex hidden'}>
+              <div className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
                 <Scroll to='work' spy={true} smooth={true}>
                   Work
                 </Scroll>
-              </li>
-              <li className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
+              </div>
+              <div className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
                 <Scroll to='about' spy={true} smooth={true}>
                   About
                 </Scroll>
-              </li>
-              <li className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
+              </div>
+              <div className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
                 <a
                   target='_blank'
                   href='https://drive.google.com/file/d/1xPqqhQoCWR8yNGmVsa_J0sAUMqoK8d9_/view?usp=sharing'
@@ -97,8 +97,8 @@ const Navbar = () => {
                 >
                   CV
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
