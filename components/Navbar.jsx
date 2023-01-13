@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className='uppercase hover:border-b hover:-mb-[1px] text-white border-white cursor-pointer font-medium text-xl'>
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1xPqqhQoCWR8yNGmVsa_J0sAUMqoK8d9_/view?usp=sharing'
+              href='https://drive.google.com/file/d/1-gboKhYXvrc8OdDR-iRm2TfCg48YHyau/view?usp=sharing'
               rel='noopener noreferrer'
             >
               CV
@@ -92,7 +92,7 @@ const Navbar = () => {
               <div className='ml-20 uppercase hover:border-b hover:-mb-[1px] border-[#1D1D1D] cursor-pointer text-tBlack font-medium text-xl'>
                 <a
                   target='_blank'
-                  href='https://drive.google.com/file/d/1xPqqhQoCWR8yNGmVsa_J0sAUMqoK8d9_/view?usp=sharing'
+                  href='https://drive.google.com/file/d/1-gboKhYXvrc8OdDR-iRm2TfCg48YHyau/view?usp=sharing'
                   rel='noopener noreferrer'
                 >
                   CV
