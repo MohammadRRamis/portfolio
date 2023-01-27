@@ -24,7 +24,7 @@ const Work = () => {
           }
           duration={'3 Weeks'}
           role={'UX designer'}
-          link={'/miskhub'}
+          link={'/case_studies/miskhub'}
           externalLink={false}
         />
 

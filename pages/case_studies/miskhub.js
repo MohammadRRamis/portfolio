@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../public/assets/logo.png';
-import MiskScreen from '../public/assets/miskhub/misk_screen.webp';
-import Overview from '../components/miskhub/Overview';
-import Audit from '../components/miskhub/Audit';
-import Research from '../components/miskhub/Research';
-import Empathize from '../components/miskhub/Empathize';
-import Ideate from '../components/miskhub/Ideate';
-import Design from '../components/miskhub/Design';
-import Test from '../components/miskhub/Test';
-import NextSteps from '../components/miskhub/NextSteps';
-import Footer from '../components/Footer';
-import Button from '../components/Button';
+import Logo from '../../public/assets/logo.png';
+import MiskScreen from '../../public/assets/miskhub/misk_screen.webp';
+import Overview from '../../components/miskhub/Overview';
+import Audit from '../../components/miskhub/Audit';
+import Research from '../../components/miskhub/Research';
+import Empathize from '../../components/miskhub/Empathize';
+import Ideate from '../../components/miskhub/Ideate';
+import Design from '../../components/miskhub/Design';
+import Test from '../../components/miskhub/Test';
+import NextSteps from '../../components/miskhub/NextSteps';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
 
 export default function Home() {
   return (
